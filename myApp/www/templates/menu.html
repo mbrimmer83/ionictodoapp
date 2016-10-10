@@ -17,18 +17,15 @@
       <h1 class="title">Left</h1>
     </ion-header-bar>
     <ion-content>
+      <ion-item menu-close href="#/app/home">
+        Home
+      </ion-item>
       <ion-list>
-        <ion-item menu-close ng-click="login()">
-          Login
+        <ion-item menu-close href="#/app/map">
+          Map
         </ion-item>
-        <ion-item menu-close href="#/app/search">
-          Search
-        </ion-item>
-        <ion-item menu-close href="#/app/browse">
-          Browse
-        </ion-item>
-        <ion-item menu-close href="#/app/playlists">
-          Playlists
+        <ion-item menu-close ng-click="makeMarker()">
+          Add Location
         </ion-item>
       </ion-list>
     </ion-content>
